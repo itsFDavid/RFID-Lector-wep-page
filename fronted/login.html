@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css//home/emilio/Documentos/Zamora/RFID/front/css>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="css/Icon.jpeg">
+<title>Formulario de Datos Personales</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav>
+        <button id="restart">Reiniciar</button>
+        <button id="Iniciar">Iniciar Sesion</button>
+    </nav>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: #EC407A;
+            padding: 10px 20px;
+            text-align: right;
+
+            & button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                background-color: #fff;
+                color: #EC407A;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #EC407A;
+        }
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-control {
+            width: calc(100% - 20px);
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #EC407A;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #EC407A;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #EC407A;
+            
+        }
+        .icon {
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 12px);
+            color: #999;
+        }
+    </style>
+    <div class="form-container">
+<div class="container">
+   
+    <h2>Registro</h2>
+    <div class="form-group">
+        <label for="nombre">Nombre: </label>
+        <p id="nombre"></p>
+        
+        <label for="">Apellido: </label>
+        <p id="apellido"></p>
+
+        <label for="">Matriculo </label>
+        <p id="matricula"></p>
+
+        <label for="">Carrera: </label>
+        <p id="carrera"></p>
+
+        <label for="">Edad: </label>
+        <p id="edad"></p>
+
+        <label for="">No de Tarjeta Registrada: </label>
+        <p id="tarjeta"></p>
+</div>
+<div>
+    <ul id="Registros"></ul>
+</div>
+</body>
+<script src="js/login.js"></script>
+</html>

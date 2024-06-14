@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="css/Icon.jpeg">
+    <title>Datos Ingresados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .table-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #EC407A;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #EC407A;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #EC407A;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <h2>Datos Ingresados</h2>
+        <table id="lista">
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Matrícula</th>
+                <th>Edad</th>
+                <th>Carrera</th>
+                <th>No Tarjeta</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+            
+        </table>
+        <a href="index.html" target="_blank" class="button">Regresar</a>
+    </div>
+    <script src="js/allData.js"></script>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('nombres').textContent = urlParams.get('nombres');
+            document.getElementById('apellidos').textContent = urlParams.get('apellidos');
+            document.getElementById('matricula').textContent = urlParams.get('matricula');
+            document.getElementById('edad').textContent = urlParams.get('edad');
+            document.getElementById('carrera').textContent = urlParams.get('carrera');
+        }
+    </script>
+</body>
+</html>
