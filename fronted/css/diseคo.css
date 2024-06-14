@@ -1,0 +1,149 @@
+/*Insertar una foto*/
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(fondo-negro-azul-poligonal-abstracto-lujoso-plantilla-diseno-banner_113524-351.avif);
+  width: 700px;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+ /* Posiciona la imagen de forma absoluta dentro del contenedor */
+  top: 30%; /* Se asegura de que la imagen esté en la parte superior */
+  left: 55%; /* La mueve a la mitad horizontalmente */
+  transform: translateX(70%);
+}
+.contend-form{   
+
+  text-align: left;
+  width: 700px;
+  height: 650px;
+  background-color: transparent;
+  margin: auto;
+  padding: 50px;
+  margin-top: 50px;
+  border: 5px solid white;
+  border-radius: 15px;
+  box-shadow: 10px 15px 40px black;
+
+}
+#preview {
+  max-width: 300px;
+  margin-top: 20px;
+  display: block;
+  margin-top: 20px;
+  border-radius: 50%; /* Esto hace que la imagen se muestre en forma de círculo */
+  overflow: hidden; /* Esto asegura que la imagen no se salga del círculo */
+  margin: 0 auto;
+  position: absolute; /* Posiciona la imagen de forma absoluta dentro del contenedor */
+        top: 30%; /* Se asegura de que la imagen esté en la parte superior */
+        left: 35%; /* La mueve a la mitad horizontalmente */
+        transform: translateX(108%);
+}
+
+#PreviewImage img {
+  max-width: 200px;
+  max-height: 200px;
+  display: block;
+  margin-top: 0px;
+}
+
+.moverObj {
+  width: 160px;
+  height: 100px;
+  background-color:whithe;
+  float: right;
+}
+/*Letra*/
+.texto{
+  font-size: 35px;
+}
+
+/*Body*/
+h1{
+  color: white;
+}
+
+
+.BOX-TEXT{
+  text-align: center;
+  width: 30%;
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  margin-top: 9px;
+  
+  
+
+}
+
+
+
+
+.preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*Imagen de RFID*/
+.img-56{
+  text-align: left;
+  width: 200px;
+  height: 200px;
+  position: absolute; /* Posiciona la imagen de forma absoluta dentro del contenedor */
+        top: 20; /* Se asegura de que la imagen esté en la parte superior */
+        left: 150%; /* La mueve a la mitad horizontalmente */
+        transform: translateX(-70%);
+}
+
+
+/*contenedor de gmmail*/
+.contenedor {
+  position: relative;
+  margin: 20px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc; /* Añadimos borde a los cuadros de texto */
+  border-radius: 5px; /* Añadimos bordes redondeados */
+  font-size: 16px;
+  transition: border-color 0.3s, width 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #1a73e8; /* Cambiamos el color del borde cuando está enfocado */
+  outline: none;
+  width: 350px;
+}
+
+label {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: black;
+  font-size: 16px;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+input[type="text"]:focus + label,
+input[type="password"]:focus + label
+input[type="text"]:valid + label,
+input[type="password"]:valid + label 
+{
+  top: 0;
+  font-size: 12px;
+  color: #1a73e8;
+}
